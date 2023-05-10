@@ -5,7 +5,7 @@ from views.test import PingView
 app = Flask(__name__)
 api = Api(app)
 
-api.add_resource(PingView, '/')
+api.add_resource(PingView, '/ping')
 
 if __name__ == '__main__':
     app.run(debug=True)
