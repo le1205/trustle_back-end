@@ -1,5 +1,5 @@
 from flask.views import MethodView
-from flask import request, jsonify
+from flask import request
 from controllers.urls_controller import URLController
 
 class CheckUserName(MethodView):
