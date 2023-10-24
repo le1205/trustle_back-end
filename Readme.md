@@ -10,9 +10,11 @@ This is a simple Flask REST API that provides two routes: `/ping` and `/urls`. T
 - Description: Returns a simple "pong" response to check if the API is running.
 
 #### Request
+
 - No request payload is required.
 
 #### Response
+
 - Status Code: 200 (OK)
 - Body: "pong"
 
@@ -22,6 +24,7 @@ This is a simple Flask REST API that provides two routes: `/ping` and `/urls`. T
 - Description: Returns a list of URLs indicating the presence or absence of the provided username.
 
 #### Request
+
 - Body: JSON payload containing the username.
 
 ```json
@@ -31,6 +34,7 @@ This is a simple Flask REST API that provides two routes: `/ping` and `/urls`. T
 ```
 
 #### Response
+
 - Status Code: 200 (OK)
 - Body: JSON array of dictionaries, each containing a URL and a boolean value indicating the presence (true) or absence (false) of the username.
 
@@ -49,7 +53,24 @@ This is a simple Flask REST API that provides two routes: `/ping` and `/urls`. T
 ]
 ```
 
+### `/fetchlink`
+
+- Method: POST
+- Description: Returns a list of URLs indicating the presence or absence of the provided username.
+
+#### Request
+
+- Body: JSON payload containing the username.
+
+```json
+{
+  "username": "michael bage",
+  "separators": [".", "_"]
+}
+```
+
 ## Running the API
+
 To run the API, follow these steps:
 
 1. Install the required dependencies by running `pip install -r requirements.txt`.
